@@ -49,7 +49,8 @@ export default function TechStack() {
     ];
 
     const Render = () =>
-        ImgAndLink.map((elm, i) => <img key={i} width='100px' src={elm.img} onClick={() => window.open(elm.link, '_blank')} />)
+        ImgAndLink.sort(() => Math.random() - 0.5).map((elm, i) =>
+            <img key={i} width='100px' src={elm.img} onClick={() => window.open(elm.link, '_blank')} />)
 
     return (
         <TechCointainer id="tech">

@@ -14,7 +14,7 @@ export default function Projects() {
             <ContentContainer>
                 <Content>
 
-                    {projects.map((project, index) => {
+                    {projects.sort(() => Math.random() - 0.5).map((project, index) => {
                         return (
                             <ProjectBox key={index}>
                                 <Image src={project.image} size={project.size} />
