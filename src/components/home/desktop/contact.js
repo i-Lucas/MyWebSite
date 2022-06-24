@@ -17,7 +17,7 @@ export default function Contact() {
 
         setLoading(true);
         e.preventDefault();
-        axios.post(`${config.API_LOCAL}/contact`, data).then(res => {
+        axios.post(`${config.API}/contact`, data).then(res => {
             alert('Thank you for your message!\nI will get back to you as soon as possible.');
             setLoading(false);
         }).catch(err => {

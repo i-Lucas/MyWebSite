@@ -15,7 +15,7 @@ export default function App() {
 
 	React.useEffect(() => {
 		if (localStorage.getItem('hasSeen') === null) {
-			axios.post(`${config.API_LOCAL}/visit`).then(res => {
+			axios.post(`${config.API}/visit`).then(res => {
 				localStorage.setItem('hasSeen', 'true');
 			});
 		}

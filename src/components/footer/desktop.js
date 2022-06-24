@@ -17,7 +17,7 @@ export default function DesktopFooter() {
 
     React.useEffect(() => {
 
-        axios.get(`${config.API_LOCAL}/visits`).then(res => {
+        axios.get(`${config.API}/visits`).then(res => {
             setVisits(res.data.visits);
         });
 
