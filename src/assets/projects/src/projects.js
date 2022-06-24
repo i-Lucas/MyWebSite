@@ -46,7 +46,7 @@ const projects = [
     {
         image: linkr,
         size: 80,
-        tile: 'Project Title',
+        tile: 'Linkr',
         description: `this was by far the most challenging project. a social network for sharing links, made collaboratively in a team of 4 members. a very big project!`,
         tech: 'React, Node, Postgre',
         preview: 'https://linkr-front-rho.vercel.app/',
