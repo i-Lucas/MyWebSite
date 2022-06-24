@@ -20,7 +20,7 @@ const projects = [
         image: driveneats,
         size: 60, // 60%
         tile: 'DrivenEats',
-        description: `this was one of the first responsive web projects I did using JavaScript, a mini delivery system. I loved doing it and I'm very proud of it.`,
+        description: `This was one of the first responsive web projects I did using JavaScript, a mini delivery system. I loved doing it and I'm very proud of it.`,
         tech: 'HTML, JavaScript, CSS',
         preview: 'https://2fgl6.csb.app/',
         github: 'https://github.com/i-Lucas/projeto3-driveneats'
@@ -29,7 +29,7 @@ const projects = [
         image: uol,
         size: 95,
         tile: 'UOL chat',
-        description: `this project was amazing. in addition to the design, the big challenge is to receive and manage messages from a API backend.`,
+        description: `This project was amazing. In addition to the design, the biggest challenge was to receive and manage messages from an API backend.`,
         tech: 'HTML, JavaScript, CSS',
         preview: 'https://0j3q1.csb.app/',
         github: 'https://github.com/i-Lucas/projeto5-batepapo-uol'
@@ -38,7 +38,7 @@ const projects = [
         image: twt,
         size: 60,
         tile: 'Tweteroo',
-        description: `My first backend project was building the Tweteroo API, a clone of Twitter!`,
+        description: `My first backend project was building the Tweteroo API, a clone of Twitter !`,
         tech: 'Node, Express',
         preview: 'https://i-lucas.github.io/projeto6-buzzquiz/',
         github: 'https://github.com/i-Lucas/projeto11-tweteroo'
@@ -47,7 +47,7 @@ const projects = [
         image: linkr,
         size: 80,
         tile: 'Linkr',
-        description: `this was by far the most challenging project. a social network for sharing links, made collaboratively in a team of 4 members. a very big project!`,
+        description: `This was by far the most challenging project. A social network for sharing links, made collaboratively in a team of 4 members. A very big project!`,
         tech: 'React, Node, Postgre',
         preview: 'https://linkr-front-rho.vercel.app/',
         github: 'https://github.com/Brenoqn2/linkr-front'
@@ -56,7 +56,7 @@ const projects = [
         image: wallet,
         size: 55,
         tile: 'MyWallet',
-        description: `there's a very cool project. is a fullstack finance system, which uses mongodb atlas to persist data. also has registration and login.`,
+        description: `That was very cool project. Its a fullstack finance system, which uses mongodb atlas to persist data. It also has registration and login.`,
         tech: 'React, Node, MongoDB',
         preview: 'https://projeto13-mywallet-front-livid.vercel.app/',
         github: 'https://github.com/i-Lucas/projeto13-mywallet-front'
