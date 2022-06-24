@@ -21,9 +21,7 @@ export default function App() {
 		}
 	}, []);
 
-
 	const [render, setRender] = React.useState({ showContact: false, showAbout: false });
-
 	return (
 		<RenderContext.Provider value={{ render, setRender }}>
 			<Home />;
