@@ -17,15 +17,19 @@ export default function Contact() {
 
         setLoading(true);
         e.preventDefault();
-        axios.post(`${config.API}/contact`, data).then(res => {
-            alert('Thank you for your message!\nI will get back to you as soon as possible.');
-            setLoading(false);
-        }).catch(err => {
-            alert('Something went wrong. Please try again later.');
-            setLoading(false);
-        })
+        const created = `${new Date().toLocaleDateString('pt-br')} ${new Date().toLocaleTimeString('pt-br')}`;
 
-        return RenderHome({ render, setRender });
+        axios.post(`${config.API}/contact`, { ...data, created }).then(res => {
+            setTimeout(() => {
+                setLoading(false);
+                RenderHome({ render, setRender });
+                alert('Thank you for your message!\nI will get back to you as soon as possible.');
+            }, 500);
+        }).catch(err => {
+            setLoading(false);
+            RenderHome({ render, setRender });
+            alert('Something went wrong. Please try again later.');
+        });
     }
 
     return (
