@@ -21,7 +21,7 @@ import rest from '../../../assets/img/rest.png';
 import ts from '../../../assets/img/ts.svg';
 import vercel from '../../../assets/img/vercel.svg';
 import webpack from '../../../assets/img/webpack.svg';
-
+import prisma from '../../../assets/img/prisma.svg';
 
 export default function TechStack() {
 
@@ -45,7 +45,8 @@ export default function TechStack() {
         { img: rest, link: 'https://restfulapi.net/' },
         { img: ts, link: 'https://www.typescriptlang.org/' },
         { img: vercel, link: 'https://vercel.com/' },
-        { img: webpack, link: 'https://webpack.js.org/' }
+        { img: webpack, link: 'https://webpack.js.org/' },
+        { img: prisma, link: 'https://www.prisma.io/' }
     ];
 
     const Render = () =>
