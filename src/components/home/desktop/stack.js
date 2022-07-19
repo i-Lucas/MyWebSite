@@ -22,36 +22,38 @@ import ts from '../../../assets/img/ts.svg';
 import vercel from '../../../assets/img/vercel.svg';
 import webpack from '../../../assets/img/webpack.svg';
 import prisma from '../../../assets/img/prisma.svg';
+import jest from '../../../assets/img/jest.svg';
 
 export default function TechStack() {
 
     const ImgAndLink = [
-        { img: ajax, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX' },
-        { img: aws, link: 'https://aws.amazon.com/' },
-        { img: babel, link: 'https://babeljs.io/' },
-        { img: css, link: 'https://www.w3schools.com/css/' },
-        { img: docker, link: 'https://www.docker.com/' },
-        { img: express, link: 'https://expressjs.com/' },
-        { img: git, link: 'https://git-scm.com/' },
-        { img: heroku, link: 'https://www.heroku.com/' },
-        { img: html, link: 'https://www.w3schools.com/html/' },
-        { img: js, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { img: linux, link: 'https://www.linux.org/' },
-        { img: mongo, link: 'https://www.mongodb.com/' },
-        { img: node, link: 'https://nodejs.org/en/' },
-        { img: posgrees, link: 'https://www.postgresql.org/' },
-        { img: react, link: 'https://reactjs.org/' },
-        { img: redis, link: 'https://redis.io/' },
-        { img: rest, link: 'https://restfulapi.net/' },
-        { img: ts, link: 'https://www.typescriptlang.org/' },
-        { img: vercel, link: 'https://vercel.com/' },
-        { img: webpack, link: 'https://webpack.js.org/' },
-        { img: prisma, link: 'https://www.prisma.io/' }
+        { img: ajax, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX', width: '12%' },
+        { img: aws, link: 'https://aws.amazon.com/', width: '12%' },
+        { img: babel, link: 'https://babeljs.io/', width: '12%' },
+        { img: css, link: 'https://www.w3schools.com/css/', width: '5%' },
+        { img: docker, link: 'https://www.docker.com/', width: '12%' },
+        { img: express, link: 'https://expressjs.com/', width: '12%' },
+        { img: git, link: 'https://git-scm.com/', width: '12%' },
+        { img: heroku, link: 'https://www.heroku.com/', width: '12%' },
+        { img: html, link: 'https://www.w3schools.com/html/', width: '5%' },
+        { img: js, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', width: '5%' },
+        { img: linux, link: 'https://www.linux.org/', width: '12%' },
+        { img: mongo, link: 'https://www.mongodb.com/', width: '12%' },
+        { img: node, link: 'https://nodejs.org/en/', width: '12%' },
+        { img: posgrees, link: 'https://www.postgresql.org/', width: '12%' },
+        { img: react, link: 'https://reactjs.org/', width: '5%' },
+        { img: redis, link: 'https://redis.io/', width: '5%' },
+        { img: rest, link: 'https://restfulapi.net/', width: '12%' },
+        { img: ts, link: 'https://www.typescriptlang.org/', width: '5%' },
+        { img: vercel, link: 'https://vercel.com/', width: '12%' },
+        { img: webpack, link: 'https://webpack.js.org/', width: '12%' },
+        { img: prisma, link: 'https://www.prisma.io/', width: '12%' },
+        { img: jest, link: 'https://jestjs.io/', width: '12%' }
     ];
 
     const Render = () =>
         ImgAndLink.sort(() => Math.random() - 0.5).map((elm, i) =>
-            <img key={i} width='100px' src={elm.img} onClick={() => window.open(elm.link, '_blank')} />)
+            <img key={i} width={elm.width} src={elm.img} onClick={() => window.open(elm.link, '_blank')} />)
 
     return (
         <TechCointainer id="tech">
@@ -116,8 +118,8 @@ const StackCointainer = styled.div`
 
 const ImageContainer = styled.div`
 
-    width: 85%;
-    height: 80%;
+    width: 90%;
+    height: 85%;
 
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +127,8 @@ const ImageContainer = styled.div`
     align-items: center;
 
     img {
-        margin: 4% 2% 4% 2%;
+
+        margin: 4% 1% 4% 1%;
         cursor: pointer;
         &:hover {
             transform: scale(1.05);
