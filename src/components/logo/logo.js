@@ -1,15 +1,32 @@
 import React from 'react';
+import axios from 'axios';
+import config from '../resources/config.json'
 import styled from 'styled-components';
 
 import logo from '../../assets/img/logo.png';
 
-export default function Logo() {
+export default function Logo({ this_ }) {
 
-    const text = '{ i-Lucas }';
+    function secret() {
+
+        if (!this_) return;
+        let input = prompt(`that's not a bug`);
+
+        if (!input || input.length !== 4) return;
+        input = input.replace(/[^0-9]/g, '');
+
+        axios.get(`${config.API}/posts/${input}`)
+            .then(res => console.log(res.data))
+            .catch(err => {
+                if (err.response.data === "Empty") return alert('nothing here');
+                return alert('nothing interesting happens');
+            });
+    };
+
     return (
         <LogoContainer>
-            <img src={logo} width='20px' />
-            <h4>{text}</h4>
+            <img src={logo} width='20px' onClick={() => secret()} />
+            <h4>{`{ i-Lucas }`}</h4>
             <h5>software engineer</h5>
         </LogoContainer>
     )

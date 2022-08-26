@@ -17,7 +17,7 @@ export default function DesktopHeader() {
         <HeaderDesktop id='home'>
             <HeaderContainer>
                 <LogoContainer>
-                    <Logo />
+                    <Logo this_={true} />
                 </LogoContainer>
                 <ButtonsContainer>
                     <button onClick={() => RenderHome({ render, setRender })}>Home</button>
